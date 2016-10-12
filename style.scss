@@ -1,0 +1,13 @@
+.header {
+	height: auto;
+}
+
+.content {
+	height: 0px;
+	transition: height 2.5s ease;
+	overflow: hidden;
+}
+
+.open {
+	height: auto;
+}
