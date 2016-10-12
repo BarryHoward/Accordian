@@ -1,13 +1,26 @@
+.blade {
+	width: 400px;
+}
+
+
 .header {
 	height: auto;
+	background: #00C6D6;
+	color: white;
+}
+
+.header:hover{
+	background: #00D9EB;
 }
 
 .content {
-	height: 0px;
-	transition: height 2.5s ease;
+	border: 2px solid green;
+	max-height: 0px;
 	overflow: hidden;
+	vertical-align: bottom;
+	transition: max-height 1s ease-out;
 }
 
 .open {
-	height: auto;
+	max-height: 100px;
 }

@@ -14,12 +14,14 @@ function switchOpen(nOpen){
 
 function toggleSize(event){
 	var target = $(event.target);
+	var oldTarget = $(`#content${currentOpen}`);
 	var newOpen = Number(target.attr('id').slice(-1));
 	switchOpen(newOpen);
+	var conTarget = $(`#content${currentOpen}`);
 
-	var conTarget = $(`#content${newOpen}`);
-	console.log(conTarget);
+	oldTarget.toggleClass("open");
 	conTarget.toggleClass("open");
+	console.log(currentOpen);
 }
 
 $(".header").click(toggleSize);
