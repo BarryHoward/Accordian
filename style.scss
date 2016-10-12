@@ -1,12 +1,24 @@
+$header-height:  50px;
+$padding: $header-height / 2 - 10;
+$border-color: #00B2C1;
+
+*{
+	box-sizing: border-box;
+}
 .blade {
-	width: 400px;
+	width: 500px;
 }
 
 
 .header {
-	height: auto;
+	margin: -1px 0px;
+	border: 1px solid $border-color;
+	height: 50px;
 	background: #00C6D6;
 	color: white;
+	font-weight: 300;
+	font-size: 15pt;
+	padding: $padding;
 }
 
 .header:hover{
@@ -14,13 +26,17 @@
 }
 
 .content {
-	border: 2px solid green;
+	border: thin solid $border-color;
 	max-height: 0px;
 	overflow: hidden;
-	vertical-align: bottom;
-	transition: max-height 1s ease-out;
+	transition: max-height 0.5s linear;
+
+	p {
+		padding: $padding + 5;
+		margin: 0px;
+	}
 }
 
 .open {
-	max-height: 100px;
+	max-height: 200px;
 }
