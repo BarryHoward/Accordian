@@ -33,7 +33,8 @@
   margin-top: 100px;
   display: inline-block;
   width: 800px;
-  height: 450px; }
+  height: 450px;
+  margin-bottom: 20px; }
 
 .image-Background {
   display: inline-block;
@@ -41,7 +42,8 @@
   height: 100%;
   transition: background-image 0.5s ease;
   padding-top: 175px;
-  position: relative; }
+  position: relative;
+  background-size: 800px 450px; }
 
 .scrollButton {
   display: block;
@@ -61,7 +63,7 @@
   color: white;
   position: absolute;
   bottom: 0px;
-  right: 0px; }
+  right: 10px; }
 
 #right {
   float: right; }

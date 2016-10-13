@@ -58,6 +58,7 @@ $image-height: 450px;
 	display: inline-block;
 	width: $image-width;
 	height:  $image-height;
+	margin-bottom: 20px;
 }
 
 .image-Background {
@@ -67,6 +68,7 @@ $image-height: 450px;
 	transition: background-image 0.5s ease;
 	padding-top: ($image-height - $button-height) / 2;
 	position: relative;
+	background-size: $image-width $image-height
 
 }
 
@@ -90,7 +92,7 @@ $image-height: 450px;
 	color: white;
 	position: absolute;
 	bottom: 0px;
-	right: 0px;
+	right: 10px;
 }
 
 
