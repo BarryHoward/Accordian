@@ -66,6 +66,7 @@ $image-height: 450px;
 	height: 100%;
 	transition: background-image 0.5s ease;
 	padding-top: ($image-height - $button-height) / 2;
+	position: relative;
 
 }
 
@@ -83,6 +84,13 @@ $image-height: 450px;
 
 .scrollButton:hover {
 	opacity: .7;
+}
+
+.info {
+	color: white;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
 }
 
 

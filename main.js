@@ -30,30 +30,37 @@ $(".header").click(toggleSize);
 // Hard Mode
 // ----------------------------
 
+
+// Initialize 1st Pic
 var currentPic = 1;
 var outputPic = $(".image-Background");
 outputPic.toggleClass("pic1");
 
 function changePic(event){
+
+	// Get button press and changes currentPic
 	var target = $(event.target);
 	var direction = target.attr('id');
 	var previousPic = currentPic;
 	currentPic = newPic(currentPic, direction);
+
+	// Pulling values from carousel Arrayy
 	var picUrl = carouselImages[currentPic-1].image_url;
 	var picTitle = carouselImages[currentPic-1].title;
 	var picId = carouselImages[currentPic-1].photographer_id;
-	console.log(currentPic);
-	console.log(picUrl);
+
+
+
+	// Convert value to class name
 	var outputPic = $(".image-Background");
 	var curPicClass = "pic" + currentPic;
 	var prevPicClass = "pic" + previousPic;
+
+	$( ".info" ).html( "All new content. " );
+
+	// Toggle Pics off and on.
 	outputPic.toggleClass(curPicClass);
 	outputPic.toggleClass(prevPicClass);
-	console.log(curPicClass);
-	console.log(prevPicClass);
-	console.log(outputPic);
-
-
 }
 
 function newPic(curPic, direction){
