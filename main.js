@@ -35,7 +35,7 @@ $(".header").click(toggleSize);
 var currentPic = 1;
 var outputPic = $(".image-Background");
 outputPic.toggleClass("pic1");
-$(".info").html(`"${carouselImages[0].title} by ${carouselImages[0].photographer_id}`);
+$(".info").html(`"${carouselImages[0].title}" by ${carouselImages[0].photographer_id}`);
 
 function changePic(event){
 
@@ -57,7 +57,7 @@ function changePic(event){
 	var curPicClass = "pic" + currentPic;
 	var prevPicClass = "pic" + previousPic;
 
-	$(".info").html(`"${picTitle}"" by ${picId}`);
+	$(".info").html(`"${picTitle}" by ${picId}`);
 
 	// Toggle Pics off and on.
 	outputPic.toggleClass(curPicClass);
