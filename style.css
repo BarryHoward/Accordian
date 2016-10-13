@@ -28,3 +28,57 @@
 
 .open {
   max-height: 200px; }
+
+.image-container {
+  margin-top: 100px;
+  display: inline-block;
+  width: 800px;
+  height: 450px; }
+
+.image-Background {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  transition: background-image 0.5s ease;
+  padding-top: 175px; }
+
+.scrollButton {
+  display: block;
+  border: 1px solid black;
+  background: black;
+  color: white;
+  width: 50px;
+  height: 100px;
+  opacity: .3;
+  padding-top: 40px;
+  padding-left: 15px; }
+
+.scrollButton:hover {
+  opacity: .7; }
+
+#right {
+  float: right; }
+
+#left {
+  float: left; }
+
+.pic1 {
+  background-image: url(http://wall-papers.info/images/desktop-backgrounds-landscapes/desktop-backgrounds-landscapes-13.jpg); }
+
+.pic2 {
+  background-image: url(http://cdn.pcwallart.com/images/desktop-backgrounds-1920x1080-landscape-wallpaper-1.jpg); }
+
+.pic3 {
+  background-image: url(http://cdn.wallpapersafari.com/68/22/xlyZNq.jpg); }
+
+.pic4 {
+  background-image: url(http://eskipaper.com/images/desktop-backgrounds-13.jpg); }
+
+.pic5 {
+  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/3f/c6/f8/3fc6f8ee691c9baa52d10e60b3e9e3a6.jpg); }
+
+.pic6 {
+  background-image: url(http://wall-papers.info/images/desktop-wallpaper-space/desktop-wallpaper-space-5.jpg); }
+
+.pic7 {
+  background-image: url(http://eskipaper.com/images/desktop-backgrounds-39.jpg); }
